@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.2)  25 APR 2018 12:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.2)  25 APR 2018 12:42
 entering extended mode
 **"./Final Review Sheet.tex"
 ("Final Review Sheet.tex"
@@ -371,23 +371,30 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \MPnumerator=\count112
 \makeMPintoPDFobject=\count113
 \everyMPtoPDFconversion=\toks29
-) [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-("Final Review Sheet.aux") ) 
+)
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+
+ []
+
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] ("Final Review Sheet.au
+x") ) 
 Here is how much of TeX's memory you used:
  3488 strings out of 493323
  43879 string characters out of 3139066
- 104889 words of memory out of 3000000
+ 105889 words of memory out of 3000000
  6842 multiletter control sequences out of 15000+200000
  16570 words of font info for 59 fonts, out of 3000000 for 9000
  1302 hyphenation exceptions out of 8191
- 34i,5n,28p,314b,197s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+ 34i,5n,28p,314b,205s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Allie\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\d
+pi600\matha8.pk> <C:\Users\Allie\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\publi
+c\mathabx\dpi600\matha12.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.p
-fb>
-Output written on "Final Review Sheet.pdf" (1 page, 37396 bytes).
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on "Final Review Sheet.pdf" (1 page, 49501 bytes).
 PDF statistics:
- 18 PDF objects out of 1000 (max. 8388607)
+ 37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
