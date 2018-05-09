@@ -51,6 +51,9 @@ Diffie helman - Elliptic Curve\\
 	Given a curve, only thing on the curve will be the quadratic residues.\\
 	given a set, show me a formula to find the quadratic residues. - Legranges symbol. $(\frac{x}{p}) = x ^{\frac{p-1}{2}} mod\ p$ if we get 1, it is a quadratic residue, -1 is going to be a non quadratic residue.\\
 	finding the square roots of $x$ raise x to the (p+1)/4 and mod by p\\
+	get ascii character to the (x1, y1) character when turning it into a cipher - m is a point on the curve.  ALICE has her own multiplier, bob will have his own multiplier. - use them to encrypt their own half masks B = 4g and A = 3g.  F = B * 3 (bobs halfmask times Alice's multiplier.\\
+	make sure you can find all of the points on the curve. you dont have to find the square roots if the number is not -1 when raised to the power of (p-1)/2 mod the number.
+	the generator value is a point on the curve and the message point is a point on the curve.  ALL OF THE THINGS YOU GET IS A POINT ON THE CURVE.
 
 \begin{enumerate}
 \item RSA - Public Key Encryption. \\
