@@ -17,7 +17,7 @@
 {\bf Need to know:}\\
 
 \begin{itemize}
-\item{} Advantages and Disadvantages of one time pad\\
+\item{} Advantages and Disadvantages of one time pad
 	\begin{itemize}
 	\item{} {\bf Advantages:}
 		\begin{itemize}
@@ -31,22 +31,40 @@
 		\item{} It is difficult to make sure that it continues to remain a secret - dispose of it after first use properly.
 		\end{itemize}
 	\end{itemize}
-\item{} Difference between Stream Ciphers and block ciphers\\
+\item{} Difference between Stream Ciphers and block ciphers
 \begin{itemize}
-	\item{}block ciphers are more general - can you convert a block cipher into a stream cipher - yes, make block size one bit\\
-	\item{}stream ciphers have more mathematical structure - statistical attacks - easier to break and easier to study\\
-	\item{}block ciphers have no math involved - has to be reversable function\\
-	\item{}stream ciphers are not suitable for software but highly efficient in hardware\\
-	\item{}block ciphers are good in hardware and software but not as good in terms of hardware as stream cipher\\
-	\item{}BC what is one time pad - attacks on one time pad - use same key - xoring two messages together gets the messages concatenated together.\\
-	\item{}What is 3DES - bit length, keys to test in worse case $2^{56}$, average $2^{55}$ - encryption decryption and encryption\\
-	\item{}DES - bit length, keys to test in worse case \\
-	\item{}Why is 2 DES not secure - how does it work\\
-	\item{}What is meet in the middle attack - cuts in half the amount of keys to check\\
+	\item{} {\bf Block Ciphers:}
+	\begin{itemize}
+		\item{}More general i.e. can you convert a block cipher into a stream cipher?  Yes, make block size one bit
+		\item{}Have no math involved - has to be reversable function
+		\item{}Are good in hardware and software but not as good in terms of hardware as stream cipher
+	\end{itemize}
+	\item{} {\bf Stream Ciphers:}
+	\begin{itemize}
+		\item{}stream ciphers have more mathematical structure - statistical attacks - easier to break and easier to study
+		\item{}stream ciphers are not suitable for software but highly efficient in hardware
+	\end{itemize}
+	\item{}What is 3DES - three 56 bit keys
+	\begin{itemize}
+		\item{} Keys to test in worse case $2^{56\cdot 3}$, average $2^{55*3}$
+		\item{} 3DES takes in 3 keys, and uses the first key to encrypt a message, the second key to decrypt the encrypted message and then uses the third key to reincrypt the decrypted message.
+	\end{itemize}
+	\item{}DES - bit length, keys to test in worse case
+	\begin{itemize}
+		\item{} Keys to test in worse case $2^{56}$, average $2^{55}$
+	\end{itemize}
+	\item{}Why is 2 DES not secure?
+	\begin{itemize}
+		\item{} Not secure because the brute force attack of it is less than $2^{90}$.
+		\item{} Keys to test in worse case $2^{56\cdot 2}$.
+		\item{} 2DES takes 2 keys and encrypts the message with one of them and then decrypts with the other key.
+	\end{itemize}
+	\item{}What is meet in the middle attack - cuts in half the amount of keys to check
+	\item{}BC what is one time pad - attacks on one time pad - use same key - xoring two messages together gets the messages concatenated together.
 \end{itemize}
 \item{}Brute force attacks and time it will take to do.\\
 	\begin{itemize}
-	\item{}How to brute force decrypt something.\\
+	\item{} How to brute force decrypt something.\\
 	\end{itemize}
 \item{}Most likelyhood of something to happen probability\\
 \item{}Factorization of a number made of 2 primes - product of 3 primes instead of 2 primes\\
