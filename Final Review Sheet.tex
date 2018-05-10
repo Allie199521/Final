@@ -13,47 +13,74 @@
 {\bf Cryptography Final - May 14th 2:45pm}\\
 {\bf Review Sheet}\\
 \end{center}
-Need to know:\\
-Advantages and Disadvantages of one time pad\\
-Difference between Stream Ciphers and block ciphers\\
-	block ciphers are more general - can you convert a block cipher into a stream cipher - yes, make block size one bit\\
-	stream ciphers have more mathematical structure - statistical attacks - easier to break and easier to study\\
-	block ciphers have no math involved - has to be reversable function\\
-	stream ciphers are not suitable for software but highly efficient in hardware\\
-	block ciphers are good in hardware and software but not as good in terms of hardware as stream cipher\\
-	BC what is one time pad - attacks on one time pad - use same key - xoring two messages together gets the messages concatenated together.\\
-	What is 3DES - bit length, keys to test in worse case $2^{56}$, average $2^{55}$ - encryption decryption and encryption\\
-	DES - bit length, keys to test in worse case \\
-	Why is 2 DES not secure - how does it work\\
-	What is meet in the middle attack - cuts in half the amount of keys to check\\
-Brute force attacks and time it will take to do.\\
-	how to do something in the brute force method\\
-Most likelyhood of something to happen probability\\
-Factorization of a number made of 2 primes - product of 3 primes instead of 2 primes\\
-	how to find phi with 3 prime values\\
-	given some cipher from Alice, how would you decrypt it?\\
-	think about it for every algorithm thats out there\\
-	also think about chinese remainder theorem\\
-diffie helman - given $g^a$ and $g^b$, finding $g^{ab}$ is hard... how?\\
-	given generator, compute the $g^{ab}$\\
-	Elgamal- how it works.\\
-	how to involve 3 people into this?\\
-	sending encrypted message from alice to bob, you have $g^{ab}$ and for bob and carol you get $g^{bc}$.\\
-	m = 59, g = 2, p = 227.  Alice has a = 8, bob b = 6, carol c = 5.  $H_a = 29$, $H_b = 64$, $H_c = 32$ (all mod 227).  Alice will generate $g^{ab}$ using Bobs half mask. $F_{ab} = 12$.  If you don't get the same full mask for bob and alice, its wrong.  Same thing for bob and carol.  $F_{bc} = 44$\\
-	p = 2q+1 - safe prime\
-	q = $\frac{p-1}{2}$\\
-	$g^1 \neq 1$\\
-	$g^2 \neq 1$\\
-	$g^q \neq 1$\\
-	
-Diffie helman - Elliptic Curve\\
-	Same security in EC - 128 as Elgamal 256.\\
-	Given a curve, only thing on the curve will be the quadratic residues.\\
-	given a set, show me a formula to find the quadratic residues. - Legranges symbol. $(\frac{x}{p}) = x ^{\frac{p-1}{2}} mod\ p$ if we get 1, it is a quadratic residue, -1 is going to be a non quadratic residue.\\
-	finding the square roots of $x$ raise x to the (p+1)/4 and mod by p\\
-	get ascii character to the (x1, y1) character when turning it into a cipher - m is a point on the curve.  ALICE has her own multiplier, bob will have his own multiplier. - use them to encrypt their own half masks B = 4g and A = 3g.  F = B * 3 (bobs halfmask times Alice's multiplier.\\
-	make sure you can find all of the points on the curve. you dont have to find the square roots if the number is not -1 when raised to the power of (p-1)/2 mod the number.
-	the generator value is a point on the curve and the message point is a point on the curve.  ALL OF THE THINGS YOU GET IS A POINT ON THE CURVE.
+
+{\bf Need to know:}\\
+
+\begin{itemize}
+\item{} Advantages and Disadvantages of one time pad\\
+	\begin{itemize}
+	\item{} {\bf Advantages:}
+		\begin{itemize}
+		\item{} Impossible to crack if the key is never reused, completely random and kept secret	
+		\item{} Immune to brute force attacks - trying all keys simply yields all plaintexts, all equally likely to be the acual plaintext.
+		\end{itemize}
+	\item{} {\bf Disadvantages:}
+		\begin{itemize}
+		\item{} Hard to find a truly random key, possible by: psuedorandom number generator
+		\item{} Security of the one time pad is only as secure as the exchange of the key - if this is not secure, then the key isn't either.
+		\item{} It is difficult to make sure that it continues to remain a secret - dispose of it after first use properly.
+		\end{itemize}
+	\end{itemize}
+\item{} Difference between Stream Ciphers and block ciphers\\
+\begin{itemize}
+	\item{}block ciphers are more general - can you convert a block cipher into a stream cipher - yes, make block size one bit\\
+	\item{}stream ciphers have more mathematical structure - statistical attacks - easier to break and easier to study\\
+	\item{}block ciphers have no math involved - has to be reversable function\\
+	\item{}stream ciphers are not suitable for software but highly efficient in hardware\\
+	\item{}block ciphers are good in hardware and software but not as good in terms of hardware as stream cipher\\
+	\item{}BC what is one time pad - attacks on one time pad - use same key - xoring two messages together gets the messages concatenated together.\\
+	\item{}What is 3DES - bit length, keys to test in worse case $2^{56}$, average $2^{55}$ - encryption decryption and encryption\\
+	\item{}DES - bit length, keys to test in worse case \\
+	\item{}Why is 2 DES not secure - how does it work\\
+	\item{}What is meet in the middle attack - cuts in half the amount of keys to check\\
+\end{itemize}
+\item{}Brute force attacks and time it will take to do.\\
+	\begin{itemize}
+	\item{}How to brute force decrypt something.\\
+	\end{itemize}
+\item{}Most likelyhood of something to happen probability\\
+\item{}Factorization of a number made of 2 primes - product of 3 primes instead of 2 primes\\
+	\begin{itemize}
+	\item{}how to find phi with 3 prime values\\
+	\item{}given some cipher from Alice, how would you decrypt it?\\
+	\item{}think about it for every algorithm thats out there\\
+	\item{}also think about chinese remainder theorem\\
+	\end{itemize}
+\item{}diffie helman - given $g^a$ and $g^b$, finding $g^{ab}$ is hard... how?\\
+	\begin{itemize}
+	\item{}given generator, compute the $g^{ab}$\\
+	\item{}Elgamal- how it works.\\
+	\item{}how to involve 3 people into this?\\
+	\item{}sending encrypted message from alice to bob, you have $g^{ab}$ and for bob and carol you get $g^{bc}$.\\
+	\item{}m = 59, g = 2, p = 227.  Alice has a = 8, bob b = 6, carol c = 5.  $H_a = 29$, $H_b = 64$, $H_c = 32$ (all mod 227).  Alice will generate $g^{ab}$ using Bobs half mask. $F_{ab} = 12$.  If you don't get the same full mask for bob and alice, its wrong.  Same thing for bob and carol.  $F_{bc} = 44$\\
+	\item{}p = 2q+1 - safe prime\
+	\item{}q = $\frac{p-1}{2}$\\
+	\item{}$g^1 \neq 1$\\
+	\item{}$g^2 \neq 1$\\
+	\item{}$g^q \neq 1$\\
+	\end{itemize}
+\item{}Diffie helman - Elliptic Curve\\
+	\begin{itemize}
+	\item{}Same security in EC - 128 as Elgamal 256.\\
+	\item{}Given a curve, only thing on the curve will be the quadratic residues.\\
+	\item{}given a set, show me a formula to find the quadratic residues. - Legranges symbol. $(\frac{x}{p}) = x ^{\frac{p-1}{2}} mod\ p$ if we get 1, it is a quadratic residue, -1 is going to be a non quadratic residue.\\
+	\item{}finding the square roots of $x$ raise x to the (p+1)/4 and mod by p\\
+	\item{}get ascii character to the (x1, y1) character when turning it into a cipher - m is a point on the curve.  ALICE has her own multiplier, bob will have his own multiplier. - use them to encrypt their own half masks B = 4g and A = 3g.  F = B * 3 (bobs halfmask times Alice's multiplier.\\
+	\item{}make sure you can find all of the points on the curve. you dont have to find the square roots if the number is not -1 when raised to the power of (p-1)/2 mod the number.
+	\item{}the generator value is a point on the curve and the message point is a point on the curve.  ALL OF THE THINGS YOU GET IS A POINT ON THE CURVE.
+	\end{itemize}
+\end{itemize}
+
 
 \begin{enumerate}
 \item RSA - Public Key Encryption. \\
@@ -68,9 +95,7 @@ $d = e^{-1}$\\
 \begin{center}
 \begin{tabular}{ |cccc|cccc| } 
  \hline
- cell1 & cell2 & cell3 & cell4 & cell5 & cell6 \vline \\ 
- cell4 & cell5 & cell6 \vline \\ 
- cell7 & cell8 & cell9 \vline \\ 
+ $\phi$ & $e$ & Quotient & Remainder & $x_1$ & $y_1$ & $x_2$ & $y_2$ \\ 
  \hline
 \end{tabular}
 \end{center}
