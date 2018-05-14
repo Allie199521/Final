@@ -58,67 +58,51 @@
 		\item{} Not secure because the brute force attack of it is less than $2^{90}$.
 		\item{} Keys to test in worse case $2^{56\cdot 2}$.
 		\item{} 2DES takes 2 keys and encrypts the message with one of them and then decrypts with the other key.
+		\item{} Keys cannot be the same or else you are sending out the message with no decryption.
 	\end{itemize}
 	\item{}What is meet in the middle attack - cuts in half the amount of keys to check
+	\begin{itemize}
+		\item{} 
+	\end{itemize}
 	\item{}BC what is one time pad - attacks on one time pad - use same key - xoring two messages together gets the messages concatenated together.
 \end{itemize}
-\item{}Brute force attacks and time it will take to do.\\
+\item{}Brute force attacks and time it will take to do.
 	\begin{itemize}
-	\item{} How to brute force decrypt something.\\
+	\item{} How to brute force decrypt something.
+	\item{} Worst case: bits = n, so $2^n$.
+	\item{} Average case: bits = n, so $\frac{2^n}{2} = 2^{n-1}$
 	\end{itemize}
-\item{}Most likelyhood of something to happen probability\\
-\item{}Factorization of a number made of 2 primes - product of 3 primes instead of 2 primes\\
+\item{}Most likelyhood of something to happen - probability - you are on your own.
+\item{}Factorization of a number made of 2 primes - product of 3 primes instead of 2 primes
 	\begin{itemize}
-	\item{}how to find phi with 3 prime values\\
-	\item{}given some cipher from Alice, how would you decrypt it?\\
-	\item{}think about it for every algorithm thats out there\\
-	\item{}also think about chinese remainder theorem\\
+	\item{}how to find phi with 3 prime values $(p-1)(q-1)(r-1)$
+	\item{}given some cipher from Alice, how would you decrypt it?
+	\item{}also think about chinese remainder theorem
 	\end{itemize}
-\item{}diffie helman - given $g^a$ and $g^b$, finding $g^{ab}$ is hard... how?\\
+\item{}diffie helman - given $g^a$ and $g^b$, finding $g^{ab}$ is hard... how?
 	\begin{itemize}
-	\item{}given generator, compute the $g^{ab}$\\
-	\item{}Elgamal- how it works.\\
-	\item{}how to involve 3 people into this?\\
-	\item{}sending encrypted message from alice to bob, you have $g^{ab}$ and for bob and carol you get $g^{bc}$.\\
-	\item{}m = 59, g = 2, p = 227.  Alice has a = 8, bob b = 6, carol c = 5.  $H_a = 29$, $H_b = 64$, $H_c = 32$ (all mod 227).  Alice will generate $g^{ab}$ using Bobs half mask. $F_{ab} = 12$.  If you don't get the same full mask for bob and alice, its wrong.  Same thing for bob and carol.  $F_{bc} = 44$\\
-	\item{}p = 2q+1 - safe prime\
-	\item{}q = $\frac{p-1}{2}$\\
-	\item{}$g^1 \neq 1$\\
-	\item{}$g^2 \neq 1$\\
-	\item{}$g^q \neq 1$\\
+	\item{}given generator, compute the $g^{ab}$
+	\item{}Elgamal- how it works.
+	\item{}how to involve 3 people into this?
+	\item{}sending encrypted message from alice to bob, you have $g^{ab}$ and for bob and carol you get $g^{bc}$.
+	\item{}m = 59, g = 2, p = 227.  
+	\item{}Alice has a = 8, bob b = 6, carol c = 5.  $H_a = 29$, $H_b = 64$, $H_c = 32$ (all mod 227).  
+	\item{} Alice will generate $g^{ab}$ using Bobs half mask. $F_{ab} = 12$.  If you don't get the same full mask for bob and alice, its wrong.  Same thing for bob and carol.  $F_{bc} = 44$
+	\item{}p = 2q+1 - safe prime
+	\item{}q = $\frac{p-1}{2}$
+	\item{}$g^1 \neq 1$
+	\item{}$g^2 \neq 1$
+	\item{}$g^q \neq 1$
 	\end{itemize}
-\item{}Diffie helman - Elliptic Curve\\
+\item{}Diffie helman - Elliptic Curve
 	\begin{itemize}
-	\item{}Same security in EC - 128 as Elgamal 256.\\
-	\item{}Given a curve, only thing on the curve will be the quadratic residues.\\
-	\item{}given a set, show me a formula to find the quadratic residues. - Legranges symbol. $(\frac{x}{p}) = x ^{\frac{p-1}{2}} mod\ p$ if we get 1, it is a quadratic residue, -1 is going to be a non quadratic residue.\\
-	\item{}finding the square roots of $x$ raise x to the (p+1)/4 and mod by p\\
-	\item{}get ascii character to the (x1, y1) character when turning it into a cipher - m is a point on the curve.  ALICE has her own multiplier, bob will have his own multiplier. - use them to encrypt their own half masks B = 4g and A = 3g.  F = B * 3 (bobs halfmask times Alice's multiplier.\\
+	\item{}Same security in EC - 128 as Elgamal 256.
+	\item{}Given a curve, only thing on the curve will be the quadratic residues.
+	\item{}given a set, show me a formula to find the quadratic residues. - Legranges symbol. $(\frac{x}{p}) = x ^{\frac{p-1}{2}} mod\ p$ if we get 1, it is a quadratic residue, -1 is going to be a non quadratic residue.
+	\item{}finding the square roots of $x$ raise x to the (p+1)/4 and mod by p
+	\item{}get ascii character to the (x1, y1) character when turning it into a cipher - m is a point on the curve.  ALICE has her own multiplier, bob will have his own multiplier. - use them to encrypt their own half masks B = 4g and A = 3g.  F = B * 3 (bobs halfmask times Alice's multiplier.
 	\item{}make sure you can find all of the points on the curve. you dont have to find the square roots if the number is not -1 when raised to the power of (p-1)/2 mod the number.
 	\item{}the generator value is a point on the curve and the message point is a point on the curve.  ALL OF THE THINGS YOU GET IS A POINT ON THE CURVE.
 	\end{itemize}
 \end{itemize}
-
-
-\begin{enumerate}
-\item RSA - Public Key Encryption. \\
-{\bf Given: }\\ $n$ a small prime\\ $e$ smallest odd integer with gcd with $\phi$ of 1\\ $c$ an encrypted message\\
-{\bf Needed: }\\ $p$ and $q$ two prime numbers whose products are n\\ $\phi = (p-1)(q-1)$\\
-$d = e^{-1}$\\
-\begin{itemize}
-\item[(a)] Find the primes $p$ and $q$.  If you do not have a prime factorization on your calculator, then know that one of them is going to be less $\sqrt{n}$, knowing this, we can test all primes less than $\sqrt{n}$.\\
-\item[(b)] Calculate $\phi = (p-1)(q-1)$.  From here, it should be easy to find $e$ if it is not given.  Parse through lowest odd values until you find one where $gcd(e, \phi) = 1$.\\
-\item[(c)] Now that you have $e$, you have to use pulverizer to solve for $d$. 
-
-\begin{center}
-\begin{tabular}{ |cccc|cccc| } 
- \hline
- $\phi$ & $e$ & Quotient & Remainder & $x_1$ & $y_1$ & $x_2$ & $y_2$ \\ 
- \hline
-\end{tabular}
-\end{center}
-
-\end{itemize}
-
-\end{enumerate}
 \end{document}

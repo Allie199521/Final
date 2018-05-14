@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.2)  10 MAY 2018 15:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.2)  14 MAY 2018 12:54
 entering extended mode
 **"./Final Review Sheet.tex"
 ("Final Review Sheet.tex"
@@ -376,170 +376,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-
- []
-
-
-Underfull \vbox (badness 5022) has occurred while \output is active []
-
- [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-
- []
-
-[3] ("Final Review Sheet.aux") ) 
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+("Final Review Sheet.aux") ) 
 Here is how much of TeX's memory you used:
- 3492 strings out of 493323
- 43933 string characters out of 3139066
+ 3487 strings out of 493323
+ 43850 string characters out of 3139066
  110889 words of memory out of 3000000
- 6846 multiletter control sequences out of 15000+200000
+ 6841 multiletter control sequences out of 15000+200000
  16570 words of font info for 59 fonts, out of 3000000 for 9000
  1302 hyphenation exceptions out of 8191
- 34i,7n,28p,351b,322s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Allie\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\public\mathabx\dpi600\matha6.pk> <C:\Users\Allie\AppData\Local\MiKTe
-X\2.9\fonts\pk\ljfour\public\mathabx\dpi600\matha8.pk> <C:\Users\Allie\AppData\
-Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\matha12.pk><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.p
-fb>
-Output written on "Final Review Sheet.pdf" (3 pages, 94155 bytes).
+ 34i,5n,28p,336b,296s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Allie\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\public\mathabx\dpi600\matha6.pk> <C:\Users\Allie\AppData\Local\MiKTeX\2.
+9\fonts\pk\ljfour\public\mathabx\dpi600\matha8.pk> <C:\Users\Allie\AppData\Loca
+l\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\matha12.pk><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on "Final Review Sheet.pdf" (2 pages, 91022 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
